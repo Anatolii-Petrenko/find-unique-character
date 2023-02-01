@@ -17,7 +17,6 @@ textArea.addEventListener('input', (e) => {
 goButton.addEventListener('click', () => {
   const result = search(cleanedText);
   createResultBlock(result, inputBlock);
-  goButton.classList.add('disabled')
   refreshButton.classList.remove('disabled')
 });
 
@@ -51,7 +50,7 @@ function search(cleanedText) {
   });
 
   const firstUniqueSymbol = firstUniqueLetter(unicLetters)
-  return firstUniqueSymbol
+  return firstUniqueSymbol ? firstUniqueSymbol : 'there are no unique character in the text'
 }
 
 function firstUniqueLetter(str) {
