@@ -1,0 +1,124 @@
+:root {
+  --main-color: #dadada;
+  --additional-color: #aeaeae;
+  --border-color: #808080;
+  --shadow-color: #808080;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.disabled {
+  display: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.header {
+  background-color: var(--additional-color);
+  min-width: 100vw;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.main {
+  flex: 1 1 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-field__input {
+  width: 80vw;
+  max-width: 700px;
+  height: 70vh;
+  padding: 15px;
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  box-shadow: 2px 2px 10px var(--shadow-color);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  width: 100px;
+  padding: 6px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px var(--shadow-color);
+}
+
+.go-button {
+  background-color: #ffff00;
+}
+
+.go-button:hover:enabled {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 10px #775700;
+  transition: all 0.3s;
+}
+
+.refresh-button {
+  background-color: #ff7700;
+}
+
+.refresh-button:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 10px #623800;
+  transition: all 0.3s;
+}
+
+.result {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.result__text {
+  font-weight: 700;
+}
+
+.footer {
+  background-color: var(--additional-color);
+  min-width: 100vw;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text {
+  font-weight: 700;
+}
